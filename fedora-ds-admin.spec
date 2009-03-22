@@ -88,7 +88,7 @@ fi
 %dir %{_sysconfdir}/%{pkgname}/admin-serv
 %config(noreplace)%{_sysconfdir}/%{pkgname}/admin-serv/*.conf
 %{_datadir}/%{pkgname}
-%{_initrddir}/%{pkgname}-admin
+/etc/rc.d/init.d/%{pkgname}-admin
 %config(noreplace)%verify(not md5 mtime size) /etc/sysconfig/%{pkgname}-admin
 %attr(755,root,root) %{_sbindir}/*
 %attr(755,root,root) %{_libdir}/*.so.*
